@@ -1,0 +1,340 @@
+@import 'mixins.less';
+
+@media only screen and (max-width:1480px){
+    .container{
+        width: 1150px;
+    }
+    section, main {
+        overflow: hidden;
+    }
+    .about-institution-slider-wrap .slick-arrow-wrap {
+        bottom: -60px;
+    }
+}
+// Large Devices, Wide Screens
+@media only screen and (max-width:1250px){
+    .container{
+        width: 940px;
+        &::before {
+            line-height: normal;
+            font-size: 215px;
+            left: -30px;
+            top: 80px;
+        }
+    }
+    .header {
+        padding: 30px 70px 10px;
+    }
+    .main-slide > .container::before {
+        top: 80px;
+    }   
+    .main-slide-wrap .section-title {
+        width: 500px;
+    }
+    .appointment .container::before {
+        content: 'How to';
+    }
+    .appointment-description {
+        padding-right: 0;
+    }
+    .appointment-wrap .row .col-2x::before {
+        font-size: 30px;
+    }
+    .services, .appointment, .about-institution, .question, .partners, .contacts {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    .services-item .services-item-description {
+        h3 {
+            font-size: 16px;
+        }
+        ul {
+            gap: auto;
+            display: block;
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+    }
+    .about-institution-slider-wrap .slick-arrow-wrap {
+        bottom: -20px;
+    }
+    .about-institution-item .about-institution-description {
+        padding: 10px;
+        gap: 15px;
+    }
+    .ld-col-1x {
+        width: 100%;
+    }
+    .form-wrap p {
+        padding-right: 0;
+    }
+    .form-wrap {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .burger {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        .container::before {
+            left: 126px;
+            top: 31px;
+        }
+        .menu-content {
+            justify-content: space-around;
+            .menu-wrap {
+                flex: none;
+            }
+        }
+    }
+}
+/* Medium Devices, Desktops */ 
+@media only screen and (max-width:992px){
+    .container{
+        width: 750px;
+        &::before {
+            font-size: 165px;
+            left: -15px;
+        }
+    }
+    .header {
+        padding: 21px 30px 10px;
+    }
+    .header-contacts-social {
+        display: none;
+    }
+    .about-institution, .appointment, .contacts, .partners, .question, .services {
+        padding-top: 75px;
+        padding-bottom: 30px;
+    }
+    .about-institution {
+        padding-bottom: 125px;
+    }
+    .main-slide-wrap .section-title {
+        width: 300px;
+    }
+    .main-title-item {
+        gap: 80px;
+    }
+    .section-title {
+        font-size: 35px;
+        line-height: 1.5;
+    }
+    .md-col-2x {
+        width: 50%;
+    }
+    .md-col-1x {
+        width: 100%;
+    }
+    .services .row {
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .appointment-description {
+        padding-right: 120px;
+    }
+    .appointment-img img{
+        width: 100%;
+    }
+    .appointment-title {
+        gap: 20px;
+    }
+    .about-institution-wrap {
+        flex-direction: column;
+        .about-institution-title {
+            padding-bottom: 20px;
+            padding-top: 0;
+            z-index: 0;
+            margin-right: 0;
+        }
+    }
+    .about-institution-slider-wrap .slick-arrow-wrap {
+        bottom: -70px;
+        left: auto;
+        right: 35px;
+    }
+    .license {
+        padding: 10px 50px;
+    }
+    .burger {
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .call-fixed {
+        right: 15px;
+        bottom: 100px;
+    }
+}
+/* Small Devices, Tablets */ 
+@media only screen and (max-width:790px){ 
+    .container{
+        width: 550px;
+        &::before {
+            left: 0;
+            font-size: 110px;
+        }
+    }
+    .main-slide > .container::before {
+        left: 0;
+    }
+    .partners .container::before {
+        top: 0;
+    }
+    .about-institution, .appointment, .contacts, .partners, .question, .services {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .sd-d-n {
+        display: none;
+    }
+    .section-title:not(.main-title) {
+        text-align: center;
+    }
+    .main-title-item {
+        gap: 35px;
+    }
+    .main-title-img {
+        bottom: 60px;
+        width: 350px;
+    }
+    .main-slide-sale a {
+        padding-left: 0;
+        font-size: 15px;
+    }
+    .sd-col-1x {
+        width: 100%;
+    }
+    .about-institution {
+        padding-bottom: 80px;
+    }
+    .services-item {
+        width: 333px;
+        margin: 0 auto;
+    }
+    .appointment-wrap {
+        flex-wrap: wrap;
+        gap: 50px;
+        .row {
+            gap: 35px;
+        }
+    }
+    .appointment-wrap .row .col-2x {
+        margin-bottom: 0;
+    }
+    .appointment-title {
+        gap: 10px;
+        padding-right: 0;
+    }
+    .appointment-description {
+        padding-right: 0;
+    }
+    .about-institution-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-institution-slider-wrap .slick-arrow-wrap {
+        bottom: -40px;
+    }
+    .question-wrap {
+        gap: 25px;
+        flex-direction: column;
+    }
+    .question-title {
+        padding-top: 0;
+    }
+    .question-wrap .row .col-2x {
+        margin-bottom: 0;
+    }
+    .form-wrap h4 {
+        text-align: center;
+    }
+    .contacts-item {
+        padding-right: 0;
+        text-align: center;
+    }
+    .burger .menu-content {
+        justify-content: space-between;
+    }
+    .call-fixed {
+        right: 10px;
+        bottom: 90px;
+    }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+    }
+    .main-title-item {
+        padding-bottom: 93px;
+    }
+    .main-slide-sale a {
+        font-size: 13px;
+    }
+    .main-title-img {
+        z-index: -100;
+    }
+    .es-col-1x {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:480px){
+    .container{
+        width: 100%;
+    }
+    .exx-s-p-l {
+        padding-left: 20px;
+    }
+    .main-title-item {
+        padding-top: 105px;
+        justify-content: flex-start;
+        padding-bottom: 0;
+    }
+    .main-slide-wrap {
+        .section-title {
+            width: 100%;
+        }
+        .call {
+            bottom: 55px;
+        }
+    }
+    .main-title-img {
+        bottom: 41px;
+    }
+    .main-slide-sale a {
+        font-size: 11px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .services-item {
+        width: auto;
+        margin: auto;
+    }
+    .about-institution-item .about-institution-description {
+        text-align: center;
+    }
+    .about-institution-slider-wrap .slick-arrow-wrap {
+        bottom: -60px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+    }
+    .question-item {
+        &.active p {
+            min-height: 160px;
+        }
+    }
+    .burger .menu-content {
+        justify-content: normal;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+    .call-fixed {
+        bottom: 90px;
+    }
+}
